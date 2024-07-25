@@ -32,6 +32,8 @@
   z-index: 1;
   position: relative;
   display: flex;
+  justify-content: flex-end; /* Ensure elements align right */
+  direction: rtl; /* Right-to-left direction */
   align-items: center;
   height: 100%;
   padding: 0 6px 0 8px;
