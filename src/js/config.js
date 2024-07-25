@@ -8,17 +8,17 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "gb";
-  const lang = "en-GB";
+  const countryCode = "qa";
+  const lang = "ar-QA";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "Size: ",
+    selectText: "الحجم: ",
     arr: ["XS", "S", "M", "M/L", "L", "L/XL", "XL", "XXL"],
   };
 
-  // I FILL THIS INFO IN MAIN.JS
+  // أملأ هذه المعلومات في MAIN.JS
   const mainProduct = {
     header: "",
     name: "",
@@ -26,239 +26,239 @@ const imageBase = baseUrl ?? landingUrl;
     newPrice: "",
     selectText: "",
     coupon: "",
-    timer:
-      "This week, you can only order one item at a promotional price.",
+    timer: "هذا الأسبوع، يمكنك طلب منتج واحد فقط بسعر ترويجي.",
     text: `
-  Congratulations!<br><br>
-  You have participated in the Stanley promotion: you have the chance to buy the STANLEY QUENCHER H2.0 thermos with an ice mold for only <b>£37</b>!
-  `,
+    تهانينا!<br><br>
+    لقد شاركت في عرض ستانلي: لديك الفرصة لشراء الترمس STANLEY QUENCHER H2.0 مع قالب الثلج بسعر <b>37 ريال</b> فقط!
+    `,
   };
 
   const notifications = [
     {
-      user: "Manuel S*****",
-      location: "London, UK",
-      action: "Just received the jewellery for £1.95!",
-      timeago: "15 seconds ago",
+      user: "مانويل س*****",
+      location: "الدوحة، قطر",
+      action: "لقد تلقيت المجوهرات للتو بسعر 1.95 ريال!",
+      timeago: "منذ 15 ثانية",
     },
     {
-      user: "Carlos B******",
-      location: "Birmingham, UK",
-      action: "Just received the jewellery for £1.95!",
-      timeago: "25 seconds ago",
+      user: "كارلوس ب******",
+      location: "الريان، قطر",
+      action: "لقد تلقيت المجوهرات للتو بسعر 1.95 ريال!",
+      timeago: "منذ 25 ثانية",
     },
   ];
 
   const reviewsArr = [
     {
-      name: "Mary Smith",
-      time: "A day ago",
-      header: "Fantastic Pizza and Friendly Service!",
+      name: "ماري سميث",
+      time: "منذ يوم",
+      header: "بيتزا رائعة وخدمة ودية!",
       product: "26468781",
       image: "./src/img/review_1.jpg",
       review:
-        "I've been to many pizza places, but Papa John's always stands out. The crust is perfectly crispy, and the toppings are always fresh and generous. The staff is incredibly friendly and attentive, making the dining experience even better. Highly recommend their pepperoni pizza – it's the best!",
+        "لقد ذهبت إلى العديد من محلات البيتزا، لكن بيتزا بابا جونز دائمًا مميزة. العجين مقرمش تمامًا، والإضافات دائمًا طازجة وسخية. الموظفون ودودون للغاية ومهتمون، مما يجعل تجربة تناول الطعام أفضل. أوصي بشدة ببيتزا البيبروني - إنها الأفضل!",
     },
     {
-      name: "Thomas Jones",
-      time: "Two days ago",
-      header: "Great Value for Money",
+      name: "توماس جونز",
+      time: "منذ يومين",
+      header: "قيمة رائعة مقابل المال",
       product: "26468783",
       image: "./src/img/review_2.jpg",
       review:
-        "Papa John's offers great value for money. The pizzas are large, packed with toppings, and very reasonably priced. I love their variety of options, and their garlic dipping sauce is a must-try! It's my go-to place for family pizza nights.",
+        "بيتزا بابا جونز تقدم قيمة رائعة مقابل المال. البيتزا كبيرة، مليئة بالإضافات، وبأسعار معقولة جدًا. أحب خياراتهم المتنوعة، وصوص الثوم الخاص بهم لا بد من تجربته! إنها مكاني المفضل لليالي البيتزا العائلية.",
     },
     {
-      name: "Sophie Johnson",
-      time: "Two days ago",
-      header: "Quick Delivery and Delicious Pizza.",
+      name: "صوفي جونسون",
+      time: "منذ يومين",
+      header: "توصيل سريع وبيتزا لذيذة.",
       product: "26468784",
       image: "./src/img/review_3.jpg",
       review:
-        "I've ordered delivery from Papa John's multiple times, and they never disappoint. The pizza always arrives hot and fresh, and the delivery is super fast. Their customer service is excellent, and the pizza tastes amazing every single time. Five stars!",
+        "لقد طلبت التوصيل من بيتزا بابا جونز عدة مرات، ولم يخيبوا أملي أبدًا. البيتزا تصل دائمًا ساخنة وطازجة، والتوصيل سريع جدًا. خدمتهم ممتازة، والبيتزا لذيذة في كل مرة. خمس نجوم!",
     },
     {
-      name: "Julian Williams",
-      time: "Four days ago",
-      header: "Perfect for Gatherings",
+      name: "جوليان ويليامز",
+      time: "منذ أربعة أيام",
+      header: "مثالية للتجمعات",
       product: "26468781",
       image: "./src/img/review_4.jpg",
       review:
-        "Papa John's is perfect for gatherings and parties. We ordered several large pizzas for a birthday party, and everyone was impressed. The pizza was flavorful, with a perfect balance of cheese and toppings. The online ordering process was easy, and the delivery was prompt. Definitely our favorite pizza place!",
+        "بيتزا بابا جونز مثالية للتجمعات والحفلات. طلبنا عدة بيتزا كبيرة لحفلة عيد ميلاد، والجميع أعجبوا. كانت البيتزا لذيذة، مع توازن مثالي بين الجبن والإضافات. عملية الطلب عبر الإنترنت كانت سهلة، والتوصيل كان سريعًا. بالتأكيد مكاننا المفضل للبيتزا!",
     },
     {
-      name: "Cameron Brown",
-      time: "Seven days ago",
-      header: "Consistently Great Quality",
+      name: "كاميرون براون",
+      time: "منذ سبعة أيام",
+      header: "جودة رائعة باستمرار",
       product: "26468782",
       review:
-        "Papa John's has consistently provided us with great quality pizza. Whether dining in or taking out, the experience is always positive. The staff is friendly, the pizza is delicious, and the prices are fair. I particularly love their BBQ Chicken Bacon pizza – it's to die for!",
+        "بيتزا بابا جونز قدمت لنا دائمًا بيتزا ذات جودة رائعة. سواء تناول الطعام في المطعم أو الشراء الخارجي، التجربة دائمًا إيجابية. الموظفون ودودون، البيتزا لذيذة، والأسعار معقولة. أحب بيتزا الدجاج بالباربيكيو والبيكون - إنها رائعة!",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "REVIEWS AND RATINGS",
+    rr: "المراجعات والتقييمات",
     percent: "99%",
-    rec: "Comments on this promotion",
+    rec: "تعليقات على هذا العرض",
   };
 
   const questions = {
-    _of: "Question {1} of {2}: ",
+    _of: "السؤال {1} من {2}: ",
     arr: [
       {
-        q: "Have you ever ordered products from McDonald's?",
-        a: ["Yes, I order often", "Yes, I order rarely", "I've never ordered"],
+        q: "هل طلبت منتجات من ماكدونالدز من قبل؟",
+        a: ["نعم، أطلب كثيرًا", "نعم، أطلب نادرًا", "لم أطلب أبدًا"],
       },
       {
-        q: "Should McDonald's continue this type of advertising campaign?",
-        a: ["Yes, of course!", "Yes, but change the promotional menu", "No"],
+        q: "هل ينبغي على ماكدونالدز الاستمرار في هذا النوع من الحملات الإعلانية؟",
+        a: ["نعم، بالتأكيد!", "نعم، لكن يجب تغيير قائمة العروض", "لا"],
       },
       {
-        q: "Would you recommend our products to your friends?",
-        a: ["Yes", "No"],
+        q: "هل توصي بمنتجاتنا لأصدقائك؟",
+        a: ["نعم", "لا"],
       },
     ],
   };
 
   const check = {
-    title: "Your response will be reviewed",
+    title: "سيتم مراجعة إجابتك",
     arr: [
-      "You have answered question 3 of 3",
-      "Your IP address shows no previous orders",
-      "Your response has been verified",
+      "لقد أجبت على السؤال 3 من 3",
+      "لا يُظهر عنوان IP الخاص بك أي طلبات سابقة",
+      "تم التحقق من إجابتك",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Thank you for participating in the survey!",
-        button: "Try your luck",
+        header: "شكرًا لمشاركتك في الاستطلاع!",
+        button: "جرب حظك",
         text: `
-<center>
-    To obtain the promotional McDonald's menu, you must choose the correct gift box.
-    <br><br>
-    You have 3 attempts, good luck!
-</center>
-          `,
+  <center>
+      للحصول على قائمة عروض ماكدونالدز، يجب عليك اختيار صندوق الهدايا الصحيح.
+      <br><br>
+      لديك 3 محاولات، حظًا سعيدًا!
+  </center>
+            `,
       },
     },
     first: {
       texts: {
-        header: "Oh, no...",
-        button: "Try again",
+        header: "أوه، لا...",
+        button: "حاول مرة أخرى",
         text: `
-<center>
-    Unfortunately, this gift is empty. You have two attempts left, good luck!
-</center>
-          `,
+  <center>
+      للأسف، هذه الهدية فارغة. لديك محاولتان متبقيتان، حظًا سعيدًا!
+  </center>
+            `,
       },
     },
     win: {
       texts: {
         header: "",
-        button: "Place the order",
+        button: "أكمل الطلب",
         text: `
-<center>
-    <p style="color: #ffffff"></p>
-    <br>
-    Click the "Place the order" button, fill out the form, and pay for the order.
-    <br>
-    <br>
-    In 3 to 5 days, you will receive a package at your address with a subscription card and instructions.
-</center>
-          `,
+  <center>
+      <p style="color: #ffffff"></p>
+      <br>
+      انقر فوق الزر "أكمل الطلب"، واملأ النموذج وادفع الطلب.
+      <br>
+      <br>
+      في غضون 3 إلى 5 أيام، ستتلقى طردًا في عنوانك مع بطاقة اشتراك وتعليمات.
+  </center>
+            `,
       },
     },
   };
 
   const cartSteps = {
     personal: {
-      title: "Personal Information",
+      title: "المعلومات الشخصية",
       fields: {
         name: {
           enabled: true,
-          field: "First Name",
+          field: "الاسم الأول",
         },
         family: {
           enabled: true,
-          field: "Last Name",
+          field: "الاسم الأخير",
         },
         phone: {
           enabled: true,
-          field: "Phone Number",
+          field: "رقم الهاتف",
         },
         email: {
           enabled: true,
-          field: "Email Address",
+          field: "عنوان البريد الإلكتروني",
         },
       },
     },
     delivery: {
-      title: "Delivery",
+      title: "التوصيل",
       fields: {
         city: {
           enabled: true,
-          field: "City",
+          field: "المدينة",
         },
         address: {
           enabled: true,
-          field: "Delivery Address",
+          field: "عنوان التوصيل",
         },
         zip: {
           enabled: true,
-          field: "Postcode",
+          field: "الرمز البريدي",
         },
       },
     },
     payment: {
-      title: "Payment Methods",
-      creditCard: "Online payment by credit card",
+      title: "طرق الدفع",
+      creditCard: "الدفع عبر الإنترنت بواسطة بطاقة الائتمان",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Order Details",
-      oldPrice: "£37.90",
-      newPrice: "£1.95",
-      size: "Size",
+      title: "تفاصيل الطلب",
+      oldPrice: "66,00 QR",
+      newPrice: "7,90 QR",
+      size: "الحجم",
       subTotal: {
-        title: "Subtotal",
-        amount: "£1.95",
+        title: "الإجمالي الفرعي",
+        amount: "7,90 QR",
       },
       deliveryTime: {
-        title: "Delivery Time",
-        amount: "3 days",
+        title: "وقت التوصيل",
+        amount: "3 أيام",
       },
       delivery: {
-        title: "Delivery",
-        amount: "£0.00",
+        title: "التوصيل",
+        amount: "0,00 QR",
       },
       total: {
-        title: "Total",
-        amount: "£1.95",
+        title: "الإجمالي",
+        amount: "7,90 QR",
       },
-      checkoutButton: "Pay for your order",
+      checkoutButton: "ادفع طلبك",
     },
   };
 
   const products = [
     {
       id: "26468781",
-      name: "3 Pizzas Large Papa",
+      name: "٣ بيتزا كبيرة بابا",
       miniImg: "./src/img/slide1.jpg",
       images: ["./src/img/slide1.jpg"],
     },
     {
       id: "26468782",
-      name: "ZESTY ITALIAN TRIO PIZZA",
+      name: "بيتزا زستي إيطاليان تريو",
       miniImg: "./src/img/slide2.jpg",
       images: ["./src/img/slide2.jpg"],
     },
   ];
+
 
 
   const footer = {

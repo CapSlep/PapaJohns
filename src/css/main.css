@@ -1087,6 +1087,8 @@ body {
 
 .price {
   font-size: 18px;
+  display: flex;
+  gap: 5px;
 }
 
 .offer-name {
@@ -2187,7 +2189,7 @@ hr {
 .reviews {
   border-top: 1px solid #e8e3df;
   width: 100%;
-  /* direction: rtl; */
+  direction: rtl;
 }
 
 .review {
@@ -2257,8 +2259,8 @@ hr {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  /* direction: rtl;
-  text-align: right; */
+  direction: rtl;
+  text-align: right;
 }
 
 @media (min-width: 1024px) {
@@ -2436,7 +2438,7 @@ hr {
 }
 
 .offer-details {
-  padding-left: 19px;
+  padding-right: 19px;
   width: calc(100% - 80px);
 }
 
@@ -3818,6 +3820,10 @@ video {
 /* End New swiper style */
 
 /* Slide Content Style */
+.slide-content {
+  direction: rtl;
+}
+
 .slide-content h2 {
   font-size: 1.7rem;
   font-weight: 700;
